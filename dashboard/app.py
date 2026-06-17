@@ -9,7 +9,7 @@ st.set_page_config(
 
 st.title("🌍 Global Edible Oil Price Forecasting Dashboard")
 
-df = pd.read_csv("data/oil_prices.csv")
+df = pd.read_csv("../data/oil_prices.csv")
 
 st.subheader("Key Metrics")
 
