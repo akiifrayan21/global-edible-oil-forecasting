@@ -9,7 +9,13 @@ st.set_page_config(
 
 st.title("🌍 Global Edible Oil Price Forecasting Dashboard")
 
-df = pd.read_csv("../data/oil_prices.csv")
+from pathlib import Path
+import pandas as pd
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+csv_file = BASE_DIR / "data" / "oil_prices.csv"
+
+df = pd.read_csv(csv_file)
 
 st.subheader("Key Metrics")
 
